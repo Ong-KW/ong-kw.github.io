@@ -1,0 +1,260 @@
+/* CSS Colors */
+/* Main: #f1faee */
+/* Secondary-1: #a8dadc */
+/* Secondary-2: #457b9d */
+/* Accents: #1d3557 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margins: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+.main-title {
+    font-size: 80px !important;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .main-title {
+        font-size: 60px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 40px !important;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.content-item {
+    padding: 60px 0;
+}
+
+#about {
+    color: #457b9d;
+}
+
+#about div {
+    padding: 10px 20px;
+}
+
+#project {
+    color: #457b9d !important;
+}
+
+#project h2 {
+    padding-left: 30px;
+}
+
+#contact {
+    color: #457b9d !important;
+}
+
+#contact a {
+    color: #1d3557 !important;
+}
+
+#contact p, #contact h2 {
+    padding-left: 30px;
+}
+
+span.keeptogether {
+    white-space: nowrap;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#technical-skills > p {
+    margin-bottom: 5px;
+}
+
+.project-item {
+    max-width: 1400px;
+    padding: 12px;
+    border: 3px solid #1d3557;
+    border-radius: 5px;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.responsive > img {
+    border-radius: 5px;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.center-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.absolute {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.relative {
+    position: relative;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+div.project-item span {
+    background-color: #1d3557 !important;
+    color: #f1faee !important;
+}
+
+.main-bg {
+    background-color: #f1faee;
+}
+
+.main-color {
+    color: #f1faee !important;
+}
+
+.secondary-bg {
+    background-color: #a8dadc;
+}
+
+.secondary-color {
+    color: #457b9d !important;
+}
+
+.accent-color {
+    color: #1d3557 !important;
+}
+
+.check-border{
+    border: 3px solid red;
+}
+
+.circle-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 3px solid #1d3557;
+    border-radius: 50%;
+}
+
+
+.mySlides1, .mySlides2 , .mySlides3 , .mySlides4 {display: none}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
