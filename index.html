@@ -1,0 +1,219 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KW Ong - Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+    <div class="scroll-indicator"></div>
+    
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+    </div>
+    
+    <div class="gradient-mesh"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">KW Ong</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="particle" style="top: 20%; left: 10%; width: 4px; height: 4px; animation-delay: 0s;"></div>
+        <div class="particle" style="top: 60%; left: 80%; width: 6px; height: 6px; animation-delay: 2s;"></div>
+        <div class="particle" style="top: 30%; right: 20%; width: 3px; height: 3px; animation-delay: 4s;"></div>
+        
+        <div class="hero-content">
+            <h1>Web Developer</h1>
+            <p>I create beautiful, functional, and user-centered digital experiences that make a difference.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a passionate web developer who creates digital solutions that blend creativity with functionality. I specialize in modern JavaScript frameworks, responsive design, and user experience optimization.</p>
+                
+            </div>
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">Django</div>
+                <div class="skill">Flask</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">PostgreSQL</div>
+                <div class="skill">SQLite</div>
+                <div class="skill">REST APIs</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-carousel" data-carousel="0">
+                        <div class="mySlides1"><img src="./assets/movie/movie-tracker-01.jpg"/></div>
+                        <div class="mySlides1"><img src="./assets/movie/movie-tracker-02.jpg"/></div>
+                        <div class="mySlides1"><img src="./assets/movie/movie-tracker-03.jpg"/></div>
+                    </div>
+                    <div class="carousel-dots">
+                        <div class="dot1 active" data-slide="0" onmouseenter="pauseCarousel1()" onmouseleave="startCarousel1()" onclick="currentDiv(1,0)"></div>
+                        <div class="dot1" data-slide="1" onmouseenter="pauseCarousel1()" onmouseleave="startCarousel1()" onclick="currentDiv(2,0)"></div>
+                        <div class="dot1" data-slide="2" onmouseenter="pauseCarousel1()" onmouseleave="startCarousel1()" onclick="currentDiv(3,0)"></div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Movie Tracker App</h3>
+                    <p class="project-description">A solution for keeping track of movies to watch and staying up to date with the latest releases.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">The Movie Database API</span>
+                        <span class="tech-tag">Material UI</span>
+                    </div>
+                    <div class="project-links">
+                        <!-- <a href="#" class="project-link" target="_blank">
+                            <span>🔗</span>
+                            Live Demo
+                        </a> -->
+                        <a href="https://github.com/Ong-KW/movie-tracker-app" class="project-link github" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-carousel" data-carousel="1">
+                        <div class="mySlides2"><img src="./assets/todo/todo-01.png"/></div>
+                        <div class="mySlides2"><img src="./assets/todo/todo-02.png"/></div>
+                        <div class="mySlides2"><img src="./assets/todo/todo-03.png"/></div>
+                    </div>
+                    <div class="carousel-dots" >
+                        <div class="dot2 active" data-slide="0" onmouseenter="pauseCarousel2()" onmouseleave="startCarousel2()" onclick="currentDiv(1,1)"></div>
+                        <div class="dot2" data-slide="1" onmouseenter="pauseCarousel2()" onmouseleave="startCarousel2()" onclick="currentDiv(2,1)"></div>
+                        <div class="dot2" data-slide="2" onmouseenter="pauseCarousel2()" onmouseleave="startCarousel2()" onclick="currentDiv(3,1)"></div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Todo App</h3>
+                    <p class="project-description">A collaborative task management tool with real-time updates.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <!-- <a href="#" class="project-link" target="_blank">
+                            <span>🔗</span>
+                            Live Demo
+                        </a> -->
+                        <a href="https://github.com/Ong-KW/python-todo-app" class="project-link github" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-carousel" data-carousel="2">
+                        <div class="mySlides3"><img src="./assets/weather/weather-app-01.png"/></div>
+                        <div class="mySlides3"><img src="./assets/weather/weather-app-02.png"/></div>
+                        <div class="mySlides3"><img src="./assets/weather/weather-app-03.png"/></div>
+                    </div>
+                    <div class="carousel-dots">
+                        <div class="dot3 active" data-slide="0" onmouseenter="pauseCarousel3()" onmouseleave="startCarousel3()" onclick="currentDiv(1,2)"></div>
+                        <div class="dot3" data-slide="1" onmouseenter="pauseCarousel3()" onmouseleave="startCarousel3()" onclick="currentDiv(2,2)"></div>
+                        <div class="dot3" data-slide="2" onmouseenter="pauseCarousel3()" onmouseleave="startCarousel3()" onclick="currentDiv(3,2)"></div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-description">A web app for checking weather at any location in the world.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">OpenWeather API</span>
+                    </div>
+                    <div class="project-links">
+                        <!-- <a href="#" class="project-link" target="_blank">
+                            <span>🔗</span>
+                            Live Demo
+                        </a> -->
+                        <a href="https://github.com/Ong-KW/react-weather-app" class="project-link github" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p>I'm always interested in new opportunities and exciting projects. Let's discuss how we can bring your ideas to life.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:ongkw1638@gmail.com" class="contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                    </svg>
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/kah-wooi-ong" class="contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/Ong-KW" class="contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> KW Ong. Crafted with passion.</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
