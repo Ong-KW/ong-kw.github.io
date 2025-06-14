@@ -38,31 +38,28 @@
             dots[slideIndex[no]-1].className += " active";
         }
 
+        // Pause Carousel
+        function pauseCarousel(t) {
+            clearTimeout(t)
+        }
+
         // Carousel 1
         function carousel1() {
             plusDivs(1,0);
-            t1 = setTimeout(carousel1, timeDelay);
-        }
-        // Pause Carousel 1
-        function pauseCarousel1() {
-            clearTimeout(t1);
+            t1 = setTimeout(carousel1, timeDelay);    
         }
         // Start Carousel 1
-        function startCarousel1() {
+        function resetTimeout1() {
             t1 = setTimeout(carousel1, timeDelay);
         }
-
+        
         // Carousel 2
         function carousel2() {
             plusDivs(1,1);
             t2 = setTimeout(carousel2, timeDelay);
         }
-        // Pause Carousel 2
-        function pauseCarousel2() {
-            clearTimeout(t2);
-        }
         // Start Carousel 2
-        function startCarousel2() {
+        function resetTimeout2() {
             t2 = setTimeout(carousel2, timeDelay);
         }
 
@@ -71,12 +68,8 @@
             plusDivs(1,2);
             t3 = setTimeout(carousel3, timeDelay);
         }
-        // Pause Carousel 3
-        function pauseCarousel3() {
-            clearTimeout(t3);
-        }
         // Start Carousel 3
-        function startCarousel3() {
+        function resetTimeout3() {
             t3 = setTimeout(carousel3, timeDelay);
         }
 
